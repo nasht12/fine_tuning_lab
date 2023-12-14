@@ -16,6 +16,8 @@ The general structure for OpenAI JOSNL would be prompt and completion.
 
 ## Getting Started
 
+Use the vercel link or run it the local environment.
+
 First, run the development server:
 
 ```bash
