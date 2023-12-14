@@ -2,13 +2,13 @@
 
 This is a NextJS project to create JSONL file to fine tune the data. A basic web interface to create training data in JSONL format that could be used in fine tuning base models on either google or open ai ecosystem.
 
-For base model training in google the JOSNL would be in the format of input_text and output_text.
+For base model training in google the JSONL would be in the format of input_text and output_text.
 ```
 {"input_text": "Classify the following text into one of the following classes:
 [business, entertainment] Text: 5 stocks to buy now",
 "output_text": "business"}
 ```
-The general structure for OpenAI JOSNL would be prompt and completion.
+The general structure for OpenAI JSONL would be prompt and completion.
 
 ```
 {"prompt": "your input text here", "completion": " expected output text here"}
