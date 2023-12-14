@@ -1,4 +1,7 @@
+## Fine Tuning Lab
+
 This is a NextJS project to create JSONL file to fine tune the data. A basic web interface to create training data in JSONL format that could be used in fine tuning base models on either google or open ai ecosystem.
+
 For base model training in google the JOSNL would be in the format of input_text and output_text.
 ```
 {"input_text": "Classify the following text into one of the following classes:
