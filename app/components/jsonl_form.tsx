@@ -58,10 +58,10 @@ const JsonlForm: React.FC = () => {
         />
         {/* Buttons */}
         <div className="flex space-x-4">
-          <button onClick={handleAdd} className="bg-blue-400 text-white px-4 py-2 rounded hover:bg-blue-600">
+          <button onClick={handleAdd} className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600">
             Add
           </button>
-          <button onClick={handleCreate} className="bg-green-400 text-white px-4 py-2 rounded hover:bg-green-600">
+          <button onClick={handleCreate} className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600">
             Download
           </button>
         </div>
@@ -70,10 +70,10 @@ const JsonlForm: React.FC = () => {
       {/* Preview Section */}
       <div className="flex-1 bg-white rounded shadow-md p-6 overflow-hidden">
         <div className="flex justify-between mb-2">
-          <button onClick={handleCopy} className="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-600">
+          <button onClick={handleCopy} className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600">
             Copy
           </button>
-          <button onClick={handleClear} className="bg-red-400 text-white px-4 py-2 rounded hover:bg-red-600">
+          <button onClick={handleClear} className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600">
             Clear
           </button>
         </div>
