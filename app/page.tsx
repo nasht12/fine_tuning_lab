@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="text-5xl text-gray-700 font-mono font-bold tracking-wide">
           Fine Tuning Lab
         </h1>
-        <p className="text-gray-500 mt-2">A tool for generating and managing JSONL data</p>
+        <p className="text-gray-500 mt-2">Generate and manage JSONL data</p>
       </header>
       <div className="w-full max-w-4xl">
         <JsonlForm />
