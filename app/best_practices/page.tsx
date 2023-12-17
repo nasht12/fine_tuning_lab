@@ -2,8 +2,8 @@ import React from "react";
 
 const BestPracticesPage: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8 bg-slate-100 overflow-auto">
-      <div className="max-w-3xl mx-auto">
+    <div className="container mx-auto px-4 py-8 bg-black overflow-auto pt-40">
+      <div className="max-w-3xl mx-auto text-white">
         {" "}
         {/* Add a container to center the content */}
         <h1 className="text-3xl font-bold mb-4">
@@ -15,7 +15,7 @@ const BestPracticesPage: React.FC = () => {
             accurate and aligned correctly. When fine-tuning a sentiment
             analysis model, make sure that the sentiment labels are correctly
             assigned to the corresponding text examples.
-            <pre className="bg-gray-200 p-4 rounded text-xs">
+            <pre className="bg-gray-200 p-4 rounded text-xs text-black">
               {`{"review": "The ambiance was wonderful and our waiter was incredibly attentive.", "label": "positive"}
 {"review": "Fantastic experience - the steak was cooked to perfection!", "label": "positive"}
 {"review": "Had to wait over an hour for our food, which was just mediocre.", "label": "negative"}

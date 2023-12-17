@@ -1,9 +1,9 @@
 import React from 'react';
-import JsonlForm from './components/jsonl_form';
+import JsonlForm from '../components/jsonl_form';
 
-export default function Home() {
+export default function Create() {
   return (
-    <main className="bg-gray-100 min-h-screen flex flex-col items-center justify-start p-10">
+    <main className="bg-black min-h-screen flex flex-col items-center justify-start p-10">
       <header className="w-full text-center mb-12">
         <h1 className="text-5xl text-gray-700 font-mono font-bold tracking-wide">
           Fine Tuning Lab

@@ -40,21 +40,21 @@ const JsonlForm: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-gray-100 p-4 md:p-6">
+    <div className="flex flex-col md:flex-row min-h-screen p-4 md:p-6">
       {/* Form Section */}
-      <div className="flex-1 bg-white rounded shadow-md p-6 mb-4 md:mb-0 md:mr-4 overflow-hidden">
+      <div className="flex-1 bg-gray-600 rounded shadow-md p-6 mb-4 md:mb-0 md:mr-4 overflow-hidden">
         {/* Input Fields */}
         <textarea
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           placeholder="Input Text"
-          className="border border-gray-300 p-2 rounded mb-2 w-full h-32 resize-none"
+          className="border border-gray-200 p-2 rounded mb-2 w-full h-32 resize-none text-black"
         />
         <textarea
           value={outputText}
           onChange={(e) => setOutputText(e.target.value)}
           placeholder="Output Text"
-          className="border border-gray-300 p-2 rounded mb-4 w-full h-32 resize-none"
+          className="border border-gray-200 p-2 rounded mb-4 w-full h-32 resize-none text-black"
         />
         {/* Buttons */}
         <div className="flex space-x-4">
@@ -68,7 +68,7 @@ const JsonlForm: React.FC = () => {
       </div>
 
       {/* Preview Section */}
-      <div className="flex-1 bg-white rounded shadow-md p-6 overflow-hidden">
+      <div className="flex-1 bg-gray-600 rounded shadow-md p-6 overflow-hidden">
         <div className="flex justify-between mb-2">
           <button onClick={handleCopy} className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600">
             Copy
@@ -77,7 +77,7 @@ const JsonlForm: React.FC = () => {
             Clear
           </button>
         </div>
-        <pre className="bg-gray-200 p-2 rounded overflow-auto h-96">{JSON.stringify(jsonlData, null, 2)}</pre>
+        <pre className="bg-gray-200 p-2 rounded overflow-auto h-96 text-black">{JSON.stringify(jsonlData, null, 2)}</pre>
       </div>
     </div>
   );
