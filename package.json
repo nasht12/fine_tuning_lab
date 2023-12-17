@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/three": "^0.159.0",
+    "dat.gui": "^0.7.9",
     "file-saver": "^2.0.5",
+    "lil-gui": "^0.19.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-to-print": "^2.14.15"
+    "react-to-print": "^2.14.15",
+    "stats.js": "^0.17.0",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "@types/node": "^20",

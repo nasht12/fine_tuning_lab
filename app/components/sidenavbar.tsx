@@ -16,15 +16,31 @@ const SideNavBar: React.FC = () => {
         {isNavExpanded && (
           <nav className="p-4">
             <ul className="space-y-2">
-            <li className="hover:bg-gray-600 rounded"><Link href="/"className="block p-2 hover:rounded text-xs">Data Preparation</Link></li>
-            <li className="hover:bg-gray-600 rounded">
-                <Link href="/best_practices"className="block p-2 hover:rounded text-xs">
-                   Best Practices
+              <li className="hover:bg-gray-600 rounded">
+                <Link href="/" className="block p-2 hover:rounded text-xs" style={{ width: '200px' }}>
+                  Data Preparation
                 </Link>
-            </li>
-              <li className="hover:bg-gray-600 rounded"><Link href="/"className="block p-2 hover:rounded text-xs">Fine-Tune with OpenAI GPT Models</Link></li>
-              <li className="hover:bg-gray-600 rounded"><Link href="/"className="block p-2 hover:rounded text-xs">Fine-Tune with Google Gemini</Link></li>
-              <li className="hover:bg-gray-600 rounded"><Link href="/"className="block p-2 hover:rounded text-xs">Fine-Tune with BERT</Link></li>
+              </li>
+              <li className="hover:bg-gray-600 rounded">
+                <Link href="/best_practices" className="block p-2 hover:rounded text-xs" style={{ width: '200px' }}>
+                  Best Practices
+                </Link>
+              </li>
+              <li className="hover:bg-gray-600 rounded">
+                <Link href="/" className="block p-2 hover:rounded text-xs" style={{ width: '200px' }}>
+                  Fine-Tune with OpenAI GPT Models
+                </Link>
+              </li>
+              <li className="hover:bg-gray-600 rounded">
+                <Link href="/" className="block p-2 hover:rounded text-xs" style={{ width: '200px' }}>
+                  Fine-Tune with Google Gemini
+                </Link>
+              </li>
+              <li className="hover:bg-gray-600 rounded">
+                <Link href="/landing" className="block p-2 hover:rounded text-xs" style={{ width: '200px' }}>
+                  Fine-Tune with BERT
+                </Link>
+              </li>
               {/* Add more navigation items as needed */}
             </ul>
           </nav>
@@ -33,7 +49,7 @@ const SideNavBar: React.FC = () => {
       <button
         onClick={toggleNav}
         className="p-2 text-xl fixed top-0 left-0 ml-64 bg-gray-100 hover:bg-gray-200 transition-all duration-300 ease-in-out"
-        style={{ marginLeft: isNavExpanded ? '16rem' : '0rem' }}  // Adjust button position based on navbar state
+        style={{ marginLeft: isNavExpanded ? '16rem' : '0rem' }} // Adjust button position based on navbar state
       >
         {isNavExpanded ? '🠔' : '🠖'}
       </button>
@@ -42,6 +58,3 @@ const SideNavBar: React.FC = () => {
 };
 
 export default SideNavBar;
-
-
-
